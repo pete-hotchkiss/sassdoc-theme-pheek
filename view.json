@@ -1,0 +1,8 @@
+{
+  "annotations": {
+   "function": ["description", "parameter", "return", "example", "throws", "since", "see", "todo", "link", "author"],
+   "mixin": ["description", "parameter", "output", "example", "throws", "since", "see", "todo", "link", "author"],
+   "placeholder": ["description", "example", "throws", "since", "see", "todo", "link", "author"],
+   "variable": ["description", "prop", "example", "since", "see", "todo", "link", "author"]
+ }
+}

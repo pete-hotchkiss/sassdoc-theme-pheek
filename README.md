@@ -1,3 +1,3 @@
-# sassdoc-theme-pheek
+# neat-sassdoc-theme
 
-> A SassDoc theme which will make your toes tingle
+> SassDoc theme used in the Bourbon suite.
