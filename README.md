@@ -1,3 +1,3 @@
-# SassDoc Pheek Theme
+# sassdoc-theme-pheek
 
-This is [SassDoc](https://github.com/SassDoc/sassdoc)'s theme... documentation to come
+> A SassDoc theme which will make your toes tingle
