@@ -3,13 +3,13 @@ PATH := $(PWD)/node_modules/.bin:$(PATH)
 SOURCES := $(wildcard src/*.js)
 DIST := $(SOURCES:src/%=dist/%)
 
-all: lint dist min sass
+all: dist min sass
 
 publish: lint dist
 	npm publish
 
-lint:
-	jshint $(SOURCES)
+# lint:
+	# jshint $(SOURCES)
 
 dist: $(DIST)
 
