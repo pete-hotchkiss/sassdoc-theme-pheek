@@ -30,7 +30,7 @@
 
 .item__example,
 .item__code {
-  @include card(1);
+  // @include card(1);
   word-wrap: break-word;
   line-height: 1.42;
 }
@@ -245,6 +245,14 @@ li.item__description {
   position: relative;
   clear: both;
   margin-bottom: $vertical-rhythm;
+
+	padding: 0 0 0 18px;
+	background-color: #21252b;
+	border: 1px solid #21252b;
+
+	box-shadow: 0 1.5px 4.2px rgba(0,0,0,0.24),0 1.5px 6px rgba(0,0,0,0.12);
+
+
 }
 
 .color-preview--inline {
@@ -255,8 +263,11 @@ li.item__description {
 
 .color-preview--block {
   @include size(2em);
-  @include absolute($top: 140%, $right: 0);
-  top: calc(100% + 20px);
-  border: 1px solid rgba(black, 0.1);
+  @include absolute($top: 18px, $right: 18px);
+	border: 1px solid rgba(black, 0.1);
   border-radius: 3px;
+	border: 1px solid rgba(255, 255, 255, 0.45);
+	/*border-radius: 3px;*/
+	/*box-shadow: inset 0 0 10px rgba(0,0,0,.5);*/
+	box-shadow: 0 0 10px rgba(0,0,0,0.8);
 }
