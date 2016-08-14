@@ -16,6 +16,8 @@
   {% include "../includes/partials/head.html.swig" with project_title %}
 </head>
 <body>
+  {# Include top navbar #}
+  {% include "../includes/partials/header.html.swig" with project_title %}
 
   {# Sidebar #}
   <aside class="sidebar" role="nav">
@@ -24,9 +26,6 @@
 
   {# Main container #}
   <article class="main" role="main">
-    A >
-    {# Include top navbar #}
-    {% include "../includes/partials/header.html.swig" with project_title %}
 
     {# Include description #}
     {% include "../includes/partials/description.html.swig" %}

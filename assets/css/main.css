@@ -10,6 +10,14 @@ h2:first-letter {
   text-transform: uppercase;
 }
 
+h1 a {
+  color: #fff !important;
+}
+
+h1.sidebar__title {
+  padding-left: 0;
+}
+
 
 .container:after, .header:after, .searchbar:after {
   content: "";
@@ -168,7 +176,16 @@ pre[class*='language-'] {
 }
 
 .dotted {
-  border-bottom: 2px dotted #dd5a6f;
+  border-bottom: 2px dotted #1F497D;
+}
+
+.push-right {
+  margin-right: 0 !important;
+}
+
+.project--header {
+  float: left;
+  width: 50%;
 }
 
 
@@ -196,7 +213,7 @@ body {
 a {
   transition: 0.15s;
   text-decoration: none;
-  color: #dd5a6f;
+  color: #1F497D;
 }
 
 a:hover, a:hover code {
@@ -210,7 +227,7 @@ table p {
 
 
 :not(pre) > code {
-  color: #dd5a6f;
+  color: #1F497D;
   white-space: nowrap;
   font-weight: normal;
 }
@@ -292,7 +309,6 @@ table p {
 
 .container {
   max-width: 100%;
-  width: 1170px;
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -314,10 +330,10 @@ table p {
   position: fixed;
   top: 0;
   right: 0;
-  left: 280px;
+  left: 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   padding: 1em 0;
-  background: #dd5a6f;
+  background: #1F497D;
   color: #e0e0e0;
   z-index: 4000;
 }
@@ -371,6 +387,7 @@ table p {
 .searchbar__form {
   float: right;
   position: relative;
+  margin-top: 7%;
 }
 
 @media (max-width: 800px) {
@@ -446,7 +463,7 @@ table p {
 @media (min-width: 801px) {
   .sidebar {
     position: fixed;
-    top: 0;
+    top: 68px;
     bottom: 0;
     left: 0;
     overflow: auto;
@@ -626,7 +643,7 @@ table p {
 
 .main__heading--secondary {
   font-size: 3em;
-  color: #dd5a6f;
+  color: #1F497D;
   font-weight: bold;
   padding-top: 0;
   margin-bottom: -3rem;
@@ -700,7 +717,7 @@ table p {
 
 
 .item__name {
-  color: #dd5a6f;
+  color: #1F497D;
 }
 
 
@@ -764,7 +781,7 @@ table p {
 
 .item__anchor {
   font-size: 0.6em;
-  color: #eeafb9;
+  color: #3579cd;
 }
 
 @media (min-width: 801px) {
@@ -831,7 +848,7 @@ table p {
 
 .item__parameters thead th {
   vertical-align: bottom;
-  border-bottom: 2px dotted #ddd;
+  border-bottom: 2px solid #ddd;
   border-top: none;
   text-align: left;
   color: #707070;

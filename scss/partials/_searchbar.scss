@@ -18,7 +18,7 @@
 .searchbar__form {
   float: right;
   position: relative;
-
+  margin-top: 7%;
   @include respond-to('small') {
     float: none;
   }
