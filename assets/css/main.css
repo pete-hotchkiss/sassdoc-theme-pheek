@@ -171,6 +171,10 @@ pre[class*='language-'] {
   border-bottom: 2px dotted #dd5a6f;
 }
 
+.push-right {
+  margin-right: 0 !important;
+}
+
 
 
 html {
@@ -314,7 +318,7 @@ table p {
   position: fixed;
   top: 0;
   right: 0;
-  left: 280px;
+  left: 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   padding: 1em 0;
   background: #dd5a6f;
@@ -831,7 +835,7 @@ table p {
 
 .item__parameters thead th {
   vertical-align: bottom;
-  border-bottom: 2px dotted #ddd;
+  border-bottom: 2px solid #ddd;
   border-top: none;
   text-align: left;
   color: #707070;

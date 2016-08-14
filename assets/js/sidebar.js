@@ -40,24 +40,24 @@
   /**
    * Load sidebar toggle
    */
-  Sidebar.prototype.loadToggle = function () {
-    $('<span />', {
-      'class': 'layout-toggle',
-      'html': '&times;',
-      'data-alt': '&#8594;'
-    }).appendTo( $('.header') );
-
-    $('.layout-toggle').on('click', function () {
-      var $this = $(this);
-      var alt;
-
-      $('body').toggleClass('sidebar-closed');
-
-      alt = $this.html();
-      $this.html($this.data('alt'));
-      $this.data('alt', alt);
-    });
-  };
+  // Sidebar.prototype.loadToggle = function () {
+  //   $('<span />', {
+  //     'class': 'layout-toggle',
+  //     'html': '&times;',
+  //     'data-alt': '&#8594;'
+  //   }).appendTo( $('.header') );
+  //
+  //   $('.layout-toggle').on('click', function () {
+  //     var $this = $(this);
+  //     var alt;
+  //
+  //     $('body').toggleClass('sidebar-closed');
+  //
+  //     alt = $this.html();
+  //     $this.html($this.data('alt'));
+  //     $this.data('alt', alt);
+  //   });
+  // };
 
   /**
    * Load data from storage or create fresh index

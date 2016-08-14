@@ -1,5 +1,5 @@
 <header class="header" role="banner">
-  <div class="container">
+  <div class="container push-right">
     <div class="sassdoc__searchbar  searchbar">
        <label for="js-search-input" class="visually-hidden">Search</label>
        <div class="searchbar__form" id="js-search">
