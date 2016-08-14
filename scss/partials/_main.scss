@@ -60,7 +60,6 @@
 .main__heading--secondary {
   font-size: 3em;
   color: $primary-color;
-  text-transform: uppercase;
   font-weight: bold;
   padding-top: 0;
   margin-bottom: $vertical-rhythm * -2;
@@ -73,12 +72,12 @@
   }
 
   &::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0.15em;
-    height: 0.2em;
-    background-color: $primary-color;
+    // content: '';
+    // position: absolute;
+    // left: 0;
+    // right: 0;
+    // bottom: 0.15em;
+    // height: 0.2em;
+    // background-color: $primary-color;
   }
 }
