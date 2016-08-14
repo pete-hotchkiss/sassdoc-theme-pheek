@@ -10,8 +10,11 @@ const $ = gulpLoadPlugins(
       { pattern: '*' }
       );
 
-/*
+var ace = false;
 
+
+/*
+  TODO - wrap this up so SASS compiles also
 Task: styles
 Initiated as a pre-task to the minify-css task, this takes all the .scss SASS files and creates the sites css file, applying appropriate browserpre-fixes as needed. Assumes that sourcemaps are required, unless the --production flag is passed.
 */

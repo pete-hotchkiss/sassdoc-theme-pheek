@@ -3,18 +3,18 @@
     <span class="item__access">[{{ item.access }}]</span>
   {% endif %}
 
-  <a class="item__name" href="#{{ item.context.type }}-{{ item.context.name }}">{{ item.context.name }}</a>
+  <a class="item__name" href="#{{ item.context.type }}-{{ item.context.name }}">{% if item.context.type == 'variable' %}${% endif %}{{ item.context.name }}</a>
 
   {% if display.alias and item.aliased.length > 0 %}
-    <span class="item__aliased">(aliased as
+    <span class="item__aliased">aliased as
     {% for alias in item.aliased %}
       <a href="#{{ item.context.type }}-{{ alias }}"><code>{{ alias }}</code></a>
     {% endfor %}
-    )</span>
+    </span>
   {% endif %}
 
   {% if item.alias %}
-    <span class="item__alias">(alias for <a href="#{{ item.context.type }}-{{ item.alias }}"><code>{{ item.alias }}</code></a>)</span>
+    <span class="item__alias">alias for <a href="#{{ item.context.type }}-{{ item.alias }}"><code>{{ item.alias }}</code></a> </span>
   {% endif %}
 </h3>
 
