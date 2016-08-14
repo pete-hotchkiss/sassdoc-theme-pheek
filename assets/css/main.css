@@ -167,6 +167,10 @@ pre[class*='language-'] {
   cursor: help;
 }
 
+.dotted {
+  border-bottom: 2px dotted #dd5a6f;
+}
+
 
 
 html {
@@ -623,7 +627,6 @@ table p {
 .main__heading--secondary {
   font-size: 3em;
   color: #dd5a6f;
-  text-transform: uppercase;
   font-weight: bold;
   padding-top: 0;
   margin-bottom: -3rem;
@@ -634,16 +637,6 @@ table p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
-
-.main__heading--secondary::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0.15em;
-  height: 0.2em;
-  background-color: #dd5a6f;
 }
 
 
@@ -838,7 +831,7 @@ table p {
 
 .item__parameters thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px dotted #ddd;
   border-top: none;
   text-align: left;
   color: #707070;
