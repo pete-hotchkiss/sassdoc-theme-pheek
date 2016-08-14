@@ -39,7 +39,7 @@ gulp.task('styles', () => {
     // .pipe(reload({stream: true}));
 });
 
-gulp.task('build', ()=> {
+gulp.task('build', ['styles'], ()=> {
   return gulp.src(['assets/js/vendor/*.js', 'assets/js/*.js', '!assets/js/main.min.js'])
     .pipe( $.print() )
     .pipe( $.concat('main.min.js'))

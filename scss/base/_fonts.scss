@@ -8,6 +8,14 @@ h2:first-letter {
   text-transform: uppercase;
 }
 
+h1 a {
+  color: #fff !important;
+}
+
+h1.sidebar__title {
+  padding-left: 0;
+}
+
 
 @import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700,400italic);

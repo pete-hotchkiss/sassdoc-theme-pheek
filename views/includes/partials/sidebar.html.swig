@@ -1,13 +1,3 @@
-<div class="sidebar__header">
-  <h1 class="sidebar__title">
-    {% if package.homepage %}
-      <a href="{{ package.homepage }}">{{ project_title }}{% if package.version %} - v{{ package.version }}{% endif %}</a>
-    {% else %}
-      {{ project_title }}{% if package.version %} - {{ package.version }}{% endif %}
-    {% endif %}
-  </h1>
-</div>
-
 <div class="sidebar__body">
   {# No item documented #}
   {% if data.length == 0 %}

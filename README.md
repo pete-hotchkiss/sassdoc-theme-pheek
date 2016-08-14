@@ -1,6 +1,3 @@
-# SassDoc Default Theme
+# SassDoc Pheek Theme
 
-From default
-
-* color squares - but positioned correctly
-* how aliases work
+This will come - in development and stuff will change. Dont use...
