@@ -3,7 +3,7 @@
  */
 .sidebar {
   @include respond-to('medium') {
-    @include fixed($top: 0, $bottom: 0, $left: 0);
+    @include fixed($top: 68px, $bottom: 0, $left: 0);
     overflow: auto;
     box-shadow: 1px 0 1.5px rgba(black, 0.12);
     width: $sidebar-width;

@@ -450,7 +450,7 @@ table p {
 @media (min-width: 801px) {
   .sidebar {
     position: fixed;
-    top: 0;
+    top: 68px;
     bottom: 0;
     left: 0;
     overflow: auto;

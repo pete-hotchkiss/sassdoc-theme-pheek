@@ -33,7 +33,7 @@
     this.load();
     this.updateDOM();
     this.bind();
-    this.loadToggle();
+    // this.loadToggle();
   };
 
 
