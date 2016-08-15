@@ -76,8 +76,10 @@
  */
 .example__description {
   padding: 1em;
-  background: #EFEFEF;
-
+	color: slategray;
+  font-family: 'Inconsolata',Consolas, Monaco, 'Andale Mono', monospace;
+  background: #21252b;
+  border-bottom: 3px solid #3b424f;
   p {
     margin: 0;
   }
