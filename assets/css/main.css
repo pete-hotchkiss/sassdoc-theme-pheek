@@ -481,6 +481,15 @@ table p {
   }
 }
 
+.sidebar__logo--medium {
+  height: 100px;
+}
+
+.sidebar img {
+  width: 100%;
+  height: auto;
+}
+
 
 .sidebar__annotation {
   color: #5c4863;

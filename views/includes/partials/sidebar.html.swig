@@ -5,6 +5,7 @@
 
   {# Some items documented #}
   {% else %}
+    <div class="sidebar__logo"></div>
     <button type="button" class="btn-toggle  js-btn-toggle" data-alt="Open all">Close all</button>
 
     {# Loop over the groups #}
