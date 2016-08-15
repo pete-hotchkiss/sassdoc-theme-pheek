@@ -332,10 +332,10 @@ table p {
   right: 0;
   left: 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  padding: 1em 0;
   background: #1F497D;
   color: #e0e0e0;
   z-index: 4000;
+  height: 68px;
 }
 
 @media (max-width: 800px) {
