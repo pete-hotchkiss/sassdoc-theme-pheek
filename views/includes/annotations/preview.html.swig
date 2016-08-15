@@ -50,7 +50,7 @@
 {% endfor %}
 
 <div class="item__code-wrapper">
-  <pre class="item__code  item__code--togglable  language-scss"
+  <pre class="item__code  item__code--togglable  language-scss line-numbers"
     data-current-state="collapsed"
     data-expanded="@{{ item.context.type }} {{ item.context.name }}({{ parameters_string }}) { {{ item.context.code }} }"
     data-collapsed="@{{ item.context.type }} {{ item.context.name }}({{ parameters_string }}) { ... }"><code>@{{ item.context.type }} {{ item.context.name }}({{ parameters_string }}) { ... }</code></pre>
