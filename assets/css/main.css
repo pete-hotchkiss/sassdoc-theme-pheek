@@ -152,6 +152,12 @@ pre[class*='language-'] {
   color: #e06c6e;
 }
 
+.language-css .token.string,
+.style .token.string,
+.token.string {
+  color: #98c379;
+}
+
 .token.atrule,
 .token.attr-value,
 .token.keyword {

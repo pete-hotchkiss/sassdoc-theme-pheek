@@ -121,6 +121,12 @@ pre[class*='language-'] {
   // background: hsla(0,0%,100%,.5);
 }
 
+.language-css .token.string,
+.style .token.string,
+.token.string {
+  color: #98c379;
+}
+
 .token.atrule,
 .token.attr-value,
 .token.keyword {
