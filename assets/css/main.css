@@ -126,10 +126,13 @@ pre[class*='language-'] {
 
 .token.tag,
 .token.boolean,
-.token.number,
 .token.constant,
 .token.symbol {
   color: #519c8c;
+}
+
+.token.number {
+  color: #d19a66;
 }
 
 .token.property {
