@@ -175,6 +175,19 @@ pre[class*='language-'] {
   cursor: help;
 }
 
+.token.hexcode {
+  color: #4aa9b9;
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.hexcode::before {
+  position: relative;
+  content: '#';
+  color: #d19a66;
+  left: 9.3px;
+}
+
 .dotted {
   border-bottom: 2px dotted #1F497D;
 }
