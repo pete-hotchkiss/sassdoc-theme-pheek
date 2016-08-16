@@ -5,11 +5,11 @@
   @include clearfix;
   @include fixed($left: 0, $top: 0, $right: 0);
   box-shadow: 0 2px 5px rgba(0,0,0,.26);
-  padding: 1em 0;
+  // padding: 1em 0;
   background: $primary-color;
   color: $light-grey;
   z-index: z('dropdown');
-
+  height: 68px;
   @include respond-to('small') {
 	left: 0;
   }

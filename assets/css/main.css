@@ -175,6 +175,19 @@ pre[class*='language-'] {
   cursor: help;
 }
 
+.token.hexcode {
+  color: #4aa9b9;
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.hexcode::before {
+  position: relative;
+  content: '#';
+  color: #d19a66;
+  left: 9.3px;
+}
+
 .dotted {
   border-bottom: 2px dotted #1F497D;
 }
@@ -332,10 +345,10 @@ table p {
   right: 0;
   left: 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  padding: 1em 0;
   background: #1F497D;
   color: #e0e0e0;
   z-index: 4000;
+  height: 68px;
 }
 
 @media (max-width: 800px) {
