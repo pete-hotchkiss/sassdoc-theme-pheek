@@ -1,3 +1,3 @@
 # SassDoc Pheek Theme
 
-This will come - in development and stuff will change. Dont use...
+WIP so expect stuff to change.

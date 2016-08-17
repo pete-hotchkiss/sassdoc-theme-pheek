@@ -93,10 +93,15 @@ pre[class*='language-'] {
 
 .token.tag,
 .token.boolean,
-.token.number,
 .token.constant,
 .token.symbol {
   color: #519c8c;
+}
+
+.token.number,
+.token.sizevalue,
+.token.extendselector {
+  color: #d19a66;
 }
 
 .token.property {
@@ -119,6 +124,12 @@ pre[class*='language-'] {
 .token.variable {
   color: #e06c6e;
   // background: hsla(0,0%,100%,.5);
+}
+
+.language-css .token.string,
+.style .token.string,
+.token.string {
+  color: #98c379;
 }
 
 .token.atrule,
