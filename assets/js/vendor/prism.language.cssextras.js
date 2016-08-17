@@ -62,6 +62,6 @@ Prism.languages.insertBefore('css', 'function', {
 	'hexcode': /#[\da-f]{3,6}/i,
 	'entity': /\\[\da-f]{1,8}/i,
 	'sizevalue': /([\d%\.]{1,5}(?:rem|px|em))/i,
-	'number': /[\d%\.]+/,
-	'extendselector': /%[\B\w]+/i
+	'extendselector': /%[\B\w]+/i,
+	'number': /[\d%\.]+/
 });
