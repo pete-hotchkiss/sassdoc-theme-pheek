@@ -317,6 +317,19 @@ table p {
   }
 }
 
+.item__row-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.item__row-item h3 {
+  border: 1px solid blue;
+}
+
+.item__row-item div[class*="item__"] {
+  border: 1px solid red;
+}
+
 
 .list-unstyled {
   padding-left: 0;

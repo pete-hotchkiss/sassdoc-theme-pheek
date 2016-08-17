@@ -8,10 +8,14 @@
 
 {% if not item.alias %}
 
+
   {% for annotation in display.annotations[item.context.type] %}
+    <div class="item__row-item">
     {% set path = '../annotations/' + annotation + '.html.swig' %}
     {% include path %}
+    </div>
   {% endfor %}
+
 
 {% else %}
 
