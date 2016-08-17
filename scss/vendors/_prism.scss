@@ -98,7 +98,9 @@ pre[class*='language-'] {
   color: #519c8c;
 }
 
-.token.number {
+.token.number,
+.token.sizevalue,
+.token.extendselector {
   color: #d19a66;
 }
 
