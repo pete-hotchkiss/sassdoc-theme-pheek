@@ -1,3 +1,4 @@
+<div class="item__row-item">
 <h3 class="item__sub-heading">Parameters</h3>
 
 {% if item.parameter.length > 0 %}
@@ -46,3 +47,4 @@
   <p>None.</p>
 
 {% endif %}
+</div>
