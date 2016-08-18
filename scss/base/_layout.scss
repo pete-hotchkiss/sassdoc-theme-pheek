@@ -22,9 +22,24 @@
     .main {
       padding-left: 0;
     }
-	
+
 	.header {
 	  left: 0;
 	}
+  }
+}
+
+.item__row-item {
+  display: flex;
+  flex-direction: row;
+
+  & h3 {
+    // border: 1px solid blue;
+    width: 20%;
+    min-width: 155px;
+  }
+
+  & div[class*="item__"] {
+    // border: 1px solid red;
   }
 }

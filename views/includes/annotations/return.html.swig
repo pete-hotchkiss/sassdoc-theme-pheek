@@ -1,4 +1,5 @@
 {% if item.return %}
+    <div class="item__row-item">
   <h3 class="item__sub-heading">Returns</h3>
 
   <div class="item__description  item__description--inline">
@@ -8,5 +9,6 @@
     <code>{{ item.return.type | display_as_type }}</code>
   {% endif %}
   {% if item.return.description %} &mdash; {{ item.return.description|safe }}{% endif %}
+  </div>
   </div>
 {% endif %}
