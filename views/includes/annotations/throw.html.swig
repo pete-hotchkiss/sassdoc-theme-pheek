@@ -8,5 +8,5 @@
     {% endfor %}
   </ul>
   </div>
-<div>
+</div>
 {% endif %}

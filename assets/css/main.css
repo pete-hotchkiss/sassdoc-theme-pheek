@@ -54,7 +54,7 @@ pre[class*='language-'] {
   font-size: 19px;
   direction: ltr;
   text-align: left;
-  white-space: pre;
+  white-space: pre-wrap;
   word-spacing: normal;
   word-break: normal;
   -moz-tab-size: 4;
@@ -323,13 +323,8 @@ table p {
 }
 
 .item__row-item h3 {
-  border: 1px solid blue;
   width: 20%;
   min-width: 155px;
-}
-
-.item__row-item div[class*="item__"] {
-  border: 1px solid red;
 }
 
 
@@ -958,6 +953,28 @@ table p {
 
 .item__description {
   margin-bottom: 1.5rem;
+}
+
+.item__table {
+  width: 100%;
+}
+
+.item__table thead tr {
+  background-color: rgba(190, 190, 190, 0.4);
+  border-bottom: 5px solid rgba(0, 0, 0, 0.05);
+}
+
+.item__table tr th:nth-child(1) {
+  padding-left: 8px;
+}
+
+.item__table tbody tr:nth-child(2n) {
+  background-color: rgba(190, 190, 190, 0.26);
+}
+
+.item__description p,
+[class*="item__"] li p {
+  margin-top: 4px;
 }
 
 li.item__description {
