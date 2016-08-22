@@ -1,0 +1,7 @@
+{
+  "required-icons": "goose",
+  "array-to-list": [ "rod", "jane", "freddy" ],
+  "foo": {
+    "bar": "fee"
+  }
+}

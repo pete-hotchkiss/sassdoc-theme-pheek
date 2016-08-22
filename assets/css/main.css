@@ -133,7 +133,8 @@ pre[class*='language-'] {
 
 .token.number,
 .token.sizevalue,
-.token.extendselector {
+.token.extendselector,
+.token.atrule-line {
   color: #d19a66;
 }
 

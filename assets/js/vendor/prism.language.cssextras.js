@@ -61,7 +61,7 @@ Prism.languages.css.selector = {
 Prism.languages.insertBefore('css', 'function', {
 	'hexcode': /#[\da-f]{3,6}/i,
 	'entity': /\\[\da-f]{1,8}/i,
-	'sizevalue': /([\d%\.]{1,5}(?:rem|px|em))/i,
+	'sizevalue': /([\d%\.]{1,5}(?:rem|px|em|s))/i,
 	'extendselector': /%[\B\w]+/i,
 	'number': /[\d%\.]+/
 });

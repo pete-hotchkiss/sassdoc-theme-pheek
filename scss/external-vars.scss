@@ -1,0 +1,19 @@
+$external-hook: 'foo-bar';
+
+
+@each $item in $array-to-list {
+  .foo--#{$item} {
+    color: #fff;
+    content: '#{$item}';
+  }
+}
+
+@each $foo in $array-to-list {
+  .bar--#{$foo} {
+    color: #000;
+  }
+}
+
+.foo::before {
+  content: $external-hook;
+}
