@@ -1,0 +1,30 @@
+.foo--rod {
+  color: #fff;
+  content: "rod";
+}
+
+.foo--jane {
+  color: #fff;
+  content: "jane";
+}
+
+.foo--freddy {
+  color: #fff;
+  content: "freddy";
+}
+
+.bar--rod {
+  color: #000;
+}
+
+.bar--jane {
+  color: #000;
+}
+
+.bar--freddy {
+  color: #000;
+}
+
+.foo::before {
+  content: "foo-bar";
+}

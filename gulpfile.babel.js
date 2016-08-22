@@ -39,6 +39,36 @@ gulp.task('styles', () => {
     // .pipe(reload({stream: true}));
 });
 
+gulp.task('styles-external-vars', () => {
+  return gulp.src(['example.json','scss/external-vars.scss'])
+    .pipe( $.print() )
+    .pipe( $.plumber() )
+    .pipe( $.sourcemaps.init() )
+    .pipe( $.sassExternalVariables({sass:false}))
+    .pipe( $.concat('output.scss'))
+    .pipe($.sass({
+      outputStyle: 'expanded',
+      precision: 10,
+      includePaths: ['.']
+    }).on('error', $.sass.logError) )
+    .pipe( $.stripCssComments() )
+    .pipe(gulp.dest('./assets/css'));
+    // .pipe(reload({stream: true}));
+});
+
+gulp.task('foo', ()=> {
+  return gulp.src('./scss/test.scss')
+  .pipe( $.print())
+  .pipe( $.plumber() )
+  .pipe($.sass({
+    outputStyle: 'expanded',
+    precision: 10,
+    includePaths: ['.']
+  }).on('error', $.sass.logError) )
+  .pipe(gulp.dest('./assets/css'));
+});
+
+
 gulp.task('build', ['styles'], ()=> {
   return gulp.src(['assets/js/vendor/*.js', 'assets/js/*.js', '!assets/js/main.min.js'])
     .pipe( $.print() )
