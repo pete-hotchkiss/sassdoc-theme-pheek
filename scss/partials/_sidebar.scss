@@ -25,7 +25,26 @@ $image-logo-height: 100px;
     width: 100%;
     height: auto;
   }
+
+  &__item {
+    position: relative;
+  }
+
+  &__color-preview {
+    transform: translate3d(-50%, -50%, 0);
+    display: inline-block;
+    box-shadow: 0px 0px 2px #000
+      width: 15px;
+      height: 15px;
+      border-radius: 48px;
+      content: '';
+      border: 1px solid #282c34;
+      position: absolute;
+      right: 0;
+      top: 50%
+  }
 }
+
 
 /**
  * Private and alias annotations

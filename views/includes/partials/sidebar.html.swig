@@ -23,11 +23,18 @@
           {# Loop over the items #}
           {% for item in items %}
             {% if loop.first %}<ul class="list-unstyled">{% endif %}
-            <li class="sidebar__item  sassdoc__item" data-group="{{ group_name }}" data-name="{{ item.context.name }}" data-type="{{ item.context.type }}">
+            <li class="sidebar__item  sassdoc__item" data-group="{{ group_name }}" data-name="{{ item.context.name }}" data-type="{{ item.context.type }}"
+
+            {% if group_name == 'colours' %}
+            data-value="{{ item.item.resolvedValue }}"
+            {% endif %} >
               <a href="#{{ group_name }}-{{ item.context.type }}-{{ item.context.name }}">{{ item.context.name }}
               {% if item.access[0] == "private" %}<span class="sidebar__annotation  sidebar__annotation--private">private</span>{% endif %}
               {% if item.alias != false %}<span class="sidebar__annotation  sidebar__annotation--alias">alias</span>{% endif %}
               </a>
+              {% if group_name == 'colours' %}
+              <div style="background: {{ item.resolvedValue }}" class="sidebar__color-preview" />
+              {% endif %}
             </li>
             {% if loop.last %}</ul>{% endif %}
           {% endfor %}

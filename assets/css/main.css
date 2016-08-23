@@ -525,6 +525,24 @@ table p {
   height: auto;
 }
 
+.sidebar__item {
+  position: relative;
+}
+
+.sidebar__color-preview {
+  transform: translate3d(-50%, -50%, 0);
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 48px;
+  content: '';
+  background-color: attr(data-value);
+  border: 1px solid #282c34;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
 
 .sidebar__annotation {
   color: #5c4863;
@@ -849,8 +867,13 @@ table p {
 .item__deprecated {
   display: inline-block;
   overflow: hidden;
-  margin-top: 5.5em;
-  margin-left: 1em;
+  background-color: rgba(224, 108, 108, 0.3);
+  color: #e06c6e;
+  padding: 17px;
+  border: 2px solid #e06c6e;
+  margin: 0;
+  margin-bottom: 8px;
+  border-left-width: 20px;
 }
 
 .item__deprecated strong {
@@ -862,7 +885,6 @@ table p {
 .item__deprecated p {
   float: left;
   margin: 0;
-  padding-left: 0.5em;
 }
 
 
