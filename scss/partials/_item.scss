@@ -115,8 +115,15 @@
 .item__deprecated {
   @include inline-block;
   overflow: hidden;
-  margin-top: 5.5em;
-  margin-left: 1em;
+  // margin-top: 5.5em;
+  // margin-left: 1em;
+	background-color: rgba(224,108,108,.3);
+  color: #e06c6e;
+  padding: 17px;
+  border: 2px solid #e06c6e;
+  margin: 0;
+  margin-bottom: 8px;
+  border-left-width: 20px;
 
   strong {
     float: left;
