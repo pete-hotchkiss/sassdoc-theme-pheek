@@ -336,7 +336,7 @@ table p {
   list-style: none;
   line-height: 1.5;
   margin-top: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
 }
 
 .list-inline li {
@@ -543,7 +543,7 @@ table p {
   height: 15px;
   border-radius: 48px;
   content: '';
-  border-width: 4px;
+  border-width: 2px;
   border-style: solid;
   background-color: #fff;
   position: absolute;
@@ -580,13 +580,13 @@ table p {
 
 .sidebar__item--heading {
   content: 'fsdfsdfs';
-  padding: 0 1.5em;
+  margin: 0;
+  padding: 8px 1.5em;
   font-weight: bold;
   font-size: 0.6875rem;
   letter-spacing: 0.075em;
   color: rgba(83, 83, 99, 0.75);
   text-transform: uppercase;
-  margin: 0 0 8px;
 }
 
 .sidebar__item--heading a {
@@ -595,7 +595,8 @@ table p {
 
 
 .sidebar__item--sub-heading {
-  padding: 0 1.3em;
+  padding: 8px 1.3em;
+  margin: 0;
   text-transform: capitalize;
   font-size: 0.8125rem;
   color: #535363;
@@ -606,8 +607,15 @@ table p {
 }
 
 .list-unstyled a {
-  margin: 16px 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
   color: #066;
+}
+
+.sidebar__item--sub-heading,
+.list-unstyled a {
+  font-weight: 100;
+  letter-spacing: 0.025em;
 }
 
 

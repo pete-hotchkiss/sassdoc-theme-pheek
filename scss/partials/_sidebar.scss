@@ -41,7 +41,7 @@ $image-logo-height: 100px;
     height: 15px;
     border-radius: 48px;
     content: '';
-    border-width: 4px;
+    border-width: 2px;
     border-style: solid;
     background-color: #fff;
     position: absolute;
@@ -90,13 +90,14 @@ $level-3: $level-2 + 2em;
  */
 .sidebar__item--heading {
   content: 'fsdfsdfs';
-  padding: 0 1.5em;
+  margin: 0;
+  padding: 8px 1.5em;
   font-weight: bold;
   font-size: 0.6875rem;
   letter-spacing: 0.075em;
   color: rgba(83, 83, 99, 0.75);
   text-transform: uppercase;
-  margin: 0 0 8px;
+  // margin: 0 0 8px;
   // margin-bottom:
 
   & a {
@@ -108,7 +109,8 @@ $level-3: $level-2 + 2em;
  * List item sub-heading
  */
 .sidebar__item--sub-heading {
-  padding: 0 1.3em;
+  padding: 8px 1.3em;
+  margin: 0;
   text-transform: capitalize;
   font-size: 0.8125rem;
   color: #535363;
@@ -119,11 +121,18 @@ $level-3: $level-2 + 2em;
 }
 
 .list-unstyled a {
-  margin: 16px 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
   color: #066;
 }
 
+
+.sidebar__item--sub-heading,
+.list-unstyled a  {
+  font-weight: 100;
+  letter-spacing: 0.025em;}
 /**
+
  * List item headings and sub-headings
  */
 // .sidebar__item--heading,
