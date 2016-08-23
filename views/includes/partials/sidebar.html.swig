@@ -6,7 +6,7 @@
   {# Some items documented #}
   {% else %}
     <div class="sidebar__logo"><img src="assets/images/logo.png"/></div>
-    <button type="button" class="btn-toggle  js-btn-toggle" data-alt="Open all">Close all</button>
+    {# <button type="button" class="btn-toggle  js-btn-toggle" data-alt="Open all">Close all</button> #}
 
     {# Loop over the groups #}
     {% for group_name, group in data.byGroupAndType %}
@@ -33,7 +33,7 @@
               {% if item.alias != false %}<span class="sidebar__annotation  sidebar__annotation--alias">alias</span>{% endif %}
               </a>
               {% if group_name == 'colours' %}
-              <div style="background: {{ item.resolvedValue }}" class="sidebar__color-preview" />
+              <div style="border-color: {{ item.resolvedValue }}" class="sidebar__color-preview" />
               {% endif %}
             </li>
             {% if loop.last %}</ul>{% endif %}

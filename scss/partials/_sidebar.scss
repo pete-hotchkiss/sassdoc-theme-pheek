@@ -4,6 +4,9 @@
 $image-logo-height: 100px;
 
 .sidebar {
+
+  background-color: #f6f6f6;
+
   @include respond-to('medium') {
     @include fixed($top: 68px, $bottom: 0, $left: 0);
     overflow: auto;
@@ -33,15 +36,17 @@ $image-logo-height: 100px;
   &__color-preview {
     transform: translate3d(-50%, -50%, 0);
     display: inline-block;
-    box-shadow: 0px 0px 2px #000
-      width: 15px;
-      height: 15px;
-      border-radius: 48px;
-      content: '';
-      border: 1px solid #282c34;
-      position: absolute;
-      right: 0;
-      top: 50%
+    box-shadow: 0px 0px 2px rgba(0,0,0, .5);
+    width: 15px;
+    height: 15px;
+    border-radius: 48px;
+    content: '';
+    border-width: 4px;
+    border-style: solid;
+    background-color: #fff;
+    position: absolute;
+    right: 16px;
+    top: 50%
   }
 }
 
@@ -64,7 +69,8 @@ $level-3: $level-2 + 2em;
   font-size: 0.9em;
 
   a {
-    padding: 0.5em $level-3;
+    padding: 0 2em;
+    font-size: 0.8125rem;
     display: block;
     text-decoration: none;
     color: $black;
@@ -83,10 +89,18 @@ $level-3: $level-2 + 2em;
  * List item heading
  */
 .sidebar__item--heading {
-  padding: 1em $level-1;
+  content: 'fsdfsdfs';
+  padding: 0 1.5em;
+  font-weight: bold;
+  font-size: 0.6875rem;
+  letter-spacing: 0.075em;
+  color: rgba(83, 83, 99, 0.75);
+  text-transform: uppercase;
+  margin: 0 0 8px;
+  // margin-bottom:
 
-  a {
-    font-weight: bold;
+  & a {
+    font-size: 0.6875rem;
   }
 }
 
@@ -94,32 +108,45 @@ $level-3: $level-2 + 2em;
  * List item sub-heading
  */
 .sidebar__item--sub-heading {
-  padding: 0.5em $level-2;
+  padding: 0 1.3em;
+  text-transform: capitalize;
+  font-size: 0.8125rem;
+  color: #535363;
 
   a {
     color: #888;
   }
 }
 
+.list-unstyled a {
+  color: #066;
+}
+
 /**
  * List item headings and sub-headings
  */
-.sidebar__item--heading,
+// .sidebar__item--heading,
 .sidebar__item--sub-heading {
   position: relative;
 
-  &:after {
-    @include absolute($right: 2em, $top: 50%);
+  &::before {
+    @include absolute($left: .7em, $top: 50%);
     content: '\25BC';
     margin-top: -0.5em;
-    color: $medium-grey;
+    color: #888;
     font-size: 0.7em;
+    transform: translateY(-12%);
   }
 
   &.is-collapsed:after {
     content: '\25B6';
   }
 
+
+}
+
+.sidebar__item--heading,
+.sidebar__item--sub-heading {
   a {
     padding: 0;
     display: inline;
