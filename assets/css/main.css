@@ -525,6 +525,24 @@ table p {
   height: auto;
 }
 
+.sidebar__item {
+  position: relative;
+}
+
+.sidebar__color-preview {
+  transform: translate3d(-50%, -50%, 0);
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 48px;
+  content: '';
+  background-color: attr(data-value);
+  border: 1px solid #282c34;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
 
 .sidebar__annotation {
   color: #5c4863;

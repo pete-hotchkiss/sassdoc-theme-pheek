@@ -18,6 +18,7 @@
 <div class="item__code-wrapper">
   <pre class="item__code  language-scss"><code>${{ item.context.name }}: {{ item.context.value }}{% if item.context.scope !== "private" %} !{{ item.context.scope }}{% endif %};</code></pre>
 
+    // TODO - port this in to left menu with disc based colour previews
   {% if (item.type|lower).indexOf('color') > -1 and item.resolvedValue|is_color == true %}
     <span class="color-preview--block" style="background: {{ item.resolvedValue }};"></span>
   {% endif %}
