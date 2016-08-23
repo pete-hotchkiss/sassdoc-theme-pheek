@@ -606,6 +606,7 @@ table p {
 }
 
 .list-unstyled a {
+  margin: 16px 0;
   color: #066;
 }
 
@@ -623,10 +624,6 @@ table p {
   color: #888;
   font-size: 0.7em;
   transform: translateY(-12%);
-}
-
-.sidebar__item--sub-heading.is-collapsed:after {
-  content: '\25B6';
 }
 
 .sidebar__item--heading a,
