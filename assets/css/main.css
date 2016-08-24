@@ -410,7 +410,7 @@ table p {
 
 .searchbar {
   display: inline-block;
-  float: right;
+  margin: 0 0 8px 16px;
 }
 
 @media (max-width: 800px) {
@@ -443,7 +443,7 @@ table p {
 .searchbar__field {
   border: none;
   padding: 0.5em;
-  font-size: 1em;
+  font-size: .825em;
   margin: 0;
   width: 100%;
   box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
