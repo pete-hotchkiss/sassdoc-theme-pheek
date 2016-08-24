@@ -182,12 +182,17 @@ $level-3: $level-2 + 2em;
 /**
  * Sidebar main title
  */
-.sidebar__title {
-  @include ellipsis;
-  font-size: 1em;
-  margin: 0;
-  padding: 1.45em;
-}
+ .sidebar__title {
+   color:#213B77;
+   padding: 0;
+   font-family: "Arial";
+   font-weight: 100;
+   font-size: 1.55rem;
+   margin-left: .55rem;
+   margin-top: 20px;
+   display: block;
+   letter-spacing: -0.05rem;
+ }
 
 /**
  * Sidebar toggle button

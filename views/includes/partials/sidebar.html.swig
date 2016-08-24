@@ -5,7 +5,7 @@
 
   {# Some items documented #}
   {% else %}
-    <div class="sidebar__logo"><img src="assets/images/logo.png"/></div>
+  
     {# <button type="button" class="btn-toggle  js-btn-toggle" data-alt="Open all">Close all</button> #}
 
     <div class="sassdoc__searchbar  searchbar">
