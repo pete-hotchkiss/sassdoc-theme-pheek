@@ -279,6 +279,7 @@ body {
   font: 1em/1.35 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   overflow: auto;
   margin: 0;
+  background: #f6f6f6;
 }
 
 
@@ -584,10 +585,6 @@ table p {
 }
 
 
-.sidebar {
-  background-color: #f6f6f6;
-}
-
 @media (min-width: 801px) {
   .sidebar {
     position: fixed;
@@ -776,7 +773,6 @@ table p {
 
 
 .main {
-  background: #f6f6f6;
   position: relative;
 }
 

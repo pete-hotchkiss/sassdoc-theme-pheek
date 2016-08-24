@@ -5,7 +5,7 @@ $image-logo-height: 100px;
 
 .sidebar {
 
-  background-color: #f6f6f6;
+  // background-color: #f6f6f6;
 
   @include respond-to('medium') {
     @include fixed($top: 68px, $bottom: 0, $left: 0);
