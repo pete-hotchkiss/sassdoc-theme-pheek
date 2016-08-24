@@ -10,14 +10,15 @@ $image-logo-height: 100px;
   @include respond-to('medium') {
     @include fixed($top: 68px, $bottom: 0, $left: 0);
     overflow: auto;
-    box-shadow: 1px 0 1.5px rgba(black, 0.12);
+    // box-shadow: 1px 0 1.5px rgba(black, 0.12);
     width: $sidebar-width;
     z-index: z('default') + 1;
-    border-right: 1px solid $light-grey;
+    // border-right: 1px solid $light-grey;
     transition: .2s cubic-bezier(0.215, 0.61, 0.355, 1);
   }
+
   @include respond-to('small') {
-	margin-top: 4em;
+	   margin-top: 4em;
   }
 
   &__logo--medium {
