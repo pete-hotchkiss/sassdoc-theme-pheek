@@ -41,7 +41,7 @@
               {% if item.access[0] == "private" %}<span class="sidebar__annotation  sidebar__annotation--private">private</span>{% endif %}
               {% if item.alias != false %}<span class="sidebar__annotation  sidebar__annotation--alias">alias</span>{% endif %}
               </a>
-              {% if group_name == 'colours' %}
+              {% if (item.type|lower).indexOf('color') > -1 and item.resolvedValue|is_color == true %}
               <div style="border-color: {{ item.resolvedValue }}" class="sidebar__color-preview" />
               {% endif %}
             </li>

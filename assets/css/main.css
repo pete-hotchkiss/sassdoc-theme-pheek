@@ -214,6 +214,49 @@ pre[class*='language-'] {
   width: 50%;
 }
 
+::-webkit-scrollbar {
+  height: 0.125rem;
+  width: 0.125rem;
+}
+
+::-webkit-scrollbar-button {
+  height: 0;
+  width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  transition: background 1000ms ease;
+  background: rgba(34, 34, 34, 0.1);
+  border: 0 none transparent;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(34, 34, 34, 0.2);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: rgba(34, 34, 34, 0.3);
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 0 none transparent;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+
+::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 
 
 html {
@@ -369,7 +412,7 @@ table p {
   right: 0;
   left: 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  background: #1F497D;
+  background: #fff;
   color: #e0e0e0;
   z-index: 4000;
   height: 68px;
