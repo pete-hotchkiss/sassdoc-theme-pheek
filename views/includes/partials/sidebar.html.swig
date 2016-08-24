@@ -5,11 +5,20 @@
 
   {# Some items documented #}
   {% else %}
-    <div class="sidebar__logo"><img src="assets/images/logo.png"/></div>
-    <button type="button" class="btn-toggle  js-btn-toggle" data-alt="Open all">Close all</button>
+  
+    {# <button type="button" class="btn-toggle  js-btn-toggle" data-alt="Open all">Close all</button> #}
+
+    <div class="sassdoc__searchbar  searchbar">
+       <label for="js-search-input" class="visually-hidden">Search</label>
+       <div class="searchbar__form" id="js-search">
+         <input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search" />
+         <ul class="searchbar__suggestions" id="js-search-suggestions"></ul>
+       </div>
+     </div>
 
     {# Loop over the groups #}
     {% for group_name, group in data.byGroupAndType %}
+    <div>
       <p class="sidebar__item  sidebar__item--heading" data-slug="{{ group_name }}"><a href="#{{ group_name }}">{{ groups[group_name] }}</a></p>
 
       {# Loop over the types #}
@@ -32,8 +41,8 @@
               {% if item.access[0] == "private" %}<span class="sidebar__annotation  sidebar__annotation--private">private</span>{% endif %}
               {% if item.alias != false %}<span class="sidebar__annotation  sidebar__annotation--alias">alias</span>{% endif %}
               </a>
-              {% if group_name == 'colours' %}
-              <div style="background: {{ item.resolvedValue }}" class="sidebar__color-preview" />
+              {% if (item.type|lower).indexOf('color') > -1 and item.resolvedValue|is_color == true %}
+              <div style="border-color: {{ item.resolvedValue }}" class="sidebar__color-preview" />
               {% endif %}
             </li>
             {% if loop.last %}</ul>{% endif %}
@@ -41,7 +50,7 @@
         {% endif %}
         {% if loop.last %}</div>{% endif %}
       {% endfor %}
-
+    </div>
     {% endfor %}
   {% endif %}
 </div>

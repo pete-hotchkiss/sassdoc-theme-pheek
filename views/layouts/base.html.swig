@@ -10,6 +10,14 @@
   {% set project_title = package.title %}
 {% endif %}
 
+{% if package.logo %}
+  {% set brand_logo = package.logo %}
+{% endif %}
+
+{% if package.sassdoc %}
+  {% set sass_title = package.sassdoc %}
+{% endif %}
+
 <html lang="en">
 <head>
   {# Include head content #}

@@ -4,7 +4,8 @@
 .searchbar {
   @include clearfix;
   display: inline-block;
-  float: right;
+  // float: right;
+  margin: 0 0 8px 16px;
 
   @include respond-to('small') {
     display: block;
@@ -34,7 +35,7 @@
 .searchbar__field {
   border: none;
   padding: 0.5em;
-  font-size: 1em;
+  font-size: .825em;
   margin: 0;
   width: 100%;
   @include card(1);
