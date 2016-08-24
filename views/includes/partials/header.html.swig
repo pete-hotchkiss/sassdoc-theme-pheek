@@ -6,7 +6,7 @@
         {% if package.homepage %}
           <a href="{{ package.homepage }}">{{ project_title }}{% if package.version %} - v{{ package.version }}{% endif %}</a>
         {% else %}
-      {{ sass_title }}{% if package.version %} - <span class="versionno">{{ package.version }}</span>{% endif %}
+      {{ sass_title }}{% if package.version %} <span class="versionno">{{ package.version }}</span>{% endif %}
         {% endif %}
       </h1>
     </div>
