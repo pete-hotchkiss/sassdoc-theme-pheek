@@ -141,16 +141,19 @@ $level-3: $level-2 + 2em;
   position: relative;
 
   &::before {
+    font-family: "FontAwesome";
     @include absolute($left: .7em, $top: 50%);
-    content: '\25BC';
+    content: '\f078';
     margin-top: -0.5em;
     color: #888;
-    font-size: 0.7em;
+    font-size: 0.6em;
     transform: translateY(-12%);
   }
 
-  &.is-collapsed:after {
-    // content: '\25B6';
+  &.is-collapsed {
+    &::before {
+      content: '\f054';
+    }
   }
 
 

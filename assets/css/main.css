@@ -710,14 +710,19 @@ table p {
 }
 
 .sidebar__item--sub-heading::before {
+  font-family: "FontAwesome";
   position: absolute;
   top: 50%;
   left: 0.7em;
-  content: '\25BC';
+  content: '\f078';
   margin-top: -0.5em;
   color: #888;
-  font-size: 0.7em;
+  font-size: 0.6em;
   transform: translateY(-12%);
+}
+
+.sidebar__item--sub-heading.is-collapsed::before {
+  content: '\f054';
 }
 
 .sidebar__item--heading a,
