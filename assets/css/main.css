@@ -587,6 +587,7 @@ table p {
   letter-spacing: 0.075em;
   color: rgba(83, 83, 99, 0.75);
   text-transform: uppercase;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.45);
 }
 
 .sidebar__item--heading a {
