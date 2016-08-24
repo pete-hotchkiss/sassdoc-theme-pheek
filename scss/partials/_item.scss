@@ -7,11 +7,11 @@
  */
 .item__heading {
   color: $black;
-  margin: $vertical-rhythm * 3 0 $vertical-rhythm 0;
+  margin: $vertical-rhythm * 3 0 .25rem 0;
   position: relative;
   font-size: 2em;
   font-weight: 300;
-  float: left;
+  // float: left;
 }
 
 /**
@@ -214,7 +214,7 @@
  * Since
  */
 .item__since {
-  float: right;
+  // float: right;
   padding-top: 0.9em;
   color: darken($medium-grey, 10%);
   margin-bottom: 1em;
@@ -277,7 +277,7 @@ li.item__description {
 .item__code-wrapper {
   position: relative;
   clear: both;
-  margin-bottom: $vertical-rhythm;
+  margin: 1.5rem 0 $vertical-rhythm 0;
 
 	padding: 0 0 0 18px;
 	background-color: #21252b;
