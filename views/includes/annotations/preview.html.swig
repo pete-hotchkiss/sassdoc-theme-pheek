@@ -1,7 +1,7 @@
 {# Placeholders #}
 {% if item.context.type == "placeholder" %}
 
-<div class="item__code-wrapper">
+<div class="item__code-wrapper {{ item.context.type  }} general">
   <pre class="item__code  item__code--togglable  language-scss"
     data-current-state="collapsed"
     data-expanded="%{{ item.context.name }} { {{ item.context.code }} }"
@@ -12,10 +12,26 @@
   {% endif %}
 </div>
 
-{# Variables #}
-{% elseif item.context.type == "variable" %}
+{% elseif item.context.type == "css" %}
 
-<div class="item__code-wrapper">
+<div class="item__code-wrapper {{ item.context.type  }} general">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="{{ item.context.name }} {
+  {{ item.context.value }}
+}"
+    data-collapsed="{{ item.context.name }} { ... }"><code>{{ item.context.name }} { ... }</code></pre>
+
+  {% if basePath %}
+    <a href="{{ basePath }}/{{ item.file.path }}#L{{ item.context.line.start }}-L{{ item.context.line.end }}" class="item__source-link" target="_blank">View source</a>
+  {% endif %}
+</div>
+From File: {{ item.file.path }}
+
+{# Variables #}
+{% elseif item.context.type == "variable" || item.context.type == "Map" %}
+
+<div class="item__code-wrapper {{ item.context.type  }}">
   <pre class="item__code  language-scss"><code>${{ item.context.name }}: {{ item.context.value }}{% if item.context.scope !== "private" %} !{{ item.context.scope }}{% endif %};</code></pre>
 
   {% if (item.type|lower).indexOf('color') > -1 and item.resolvedValue|is_color == true %}
@@ -49,7 +65,7 @@
   {% endif %}
 {% endfor %}
 
-<div class="item__code-wrapper">
+<div class="item__code-wrapper {{ item.context.type  }}">
   <pre class="item__code  item__code--togglable  language-scss line-numbers"
     data-current-state="collapsed"
     data-expanded="@{{ item.context.type }} {{ item.context.name }}({{ parameters_string }}) { {{ item.context.code }} }"
