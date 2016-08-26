@@ -9,7 +9,7 @@
       <ul class="list-unstyled">
     {% endif %}
 
-        <li><span class="item__cross-type">[{{ see.context.type }}]</span> <a href="#{{ see.context.type }}-{{ see.context.name }}"><code>{{ see.context.name }}</code></a></li>
+        <li><span class="item__cross-type">[{{ see.context.type }}]</span> <a href="#{{ see.group }}-{{ see.context.type }}-{{ see.context.name }}"><code>{{ see.context.name }}</code></a></li>
   {% endif %}
 
 {% endfor %}
@@ -19,4 +19,3 @@
 </div>
 </div>
 {% endif %}
- 
