@@ -223,7 +223,7 @@ pre[class*='language-'] {
 
 .item__code__tab {
   position: relative;
-  right: 1px;
+  right: 0px;
   text-align: right;
   z-index: 10;
 }
@@ -1053,13 +1053,11 @@ table p {
 }
 
 .item__deprecated strong {
-  float: left;
   color: #cc0000;
   text-transform: uppercase;
 }
 
 .item__deprecated p {
-  float: left;
   margin: 0;
 }
 
