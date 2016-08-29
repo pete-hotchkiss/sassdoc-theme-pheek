@@ -13,22 +13,13 @@ const $ = gulpLoadPlugins(
 var ace = false;
 
 
-/*
-  TODO - wrap this up so SASS compiles also
-Task: styles
-Initiated as a pre-task to the minify-css task, this takes all the .scss SASS files and creates the sites css file, applying appropriate browserpre-fixes as needed. Assumes that sourcemaps are required, unless the --production flag is passed.
-*/
+
 // var sass = require('gulp-sass');
 gulp.task('styles', () => {
   return gulp.src(['scss/main.scss'])
     .pipe( $.print() )
     .pipe( $.plumber() )
     .pipe( $.sourcemaps.init() )
-    // .pipe($.sass.sync({
-    //   outputStyle: 'expanded',
-    //   precision: 10,
-    //   includePaths: ['.']
-    // }).on('error', $.sass.logError) )
     .pipe($.sass({
       outputStyle: 'expanded',
       precision: 10,
@@ -39,35 +30,11 @@ gulp.task('styles', () => {
     // .pipe(reload({stream: true}));
 });
 
-gulp.task('styles-external-vars', () => {
-  return gulp.src(['example.json','scss/external-vars.scss'])
-    .pipe( $.print() )
-    .pipe( $.plumber() )
-    .pipe( $.sourcemaps.init() )
-    .pipe( $.sassExternalVariables({sass:false}))
-    .pipe( $.concat('output.scss'))
-    .pipe($.sass({
-      outputStyle: 'expanded',
-      precision: 10,
-      includePaths: ['.']
-    }).on('error', $.sass.logError) )
-    .pipe( $.stripCssComments() )
-    .pipe(gulp.dest('./assets/css'));
-    // .pipe(reload({stream: true}));
+gulp.task('bump', function(){
+  gulp.src('./package.json')
+  .pipe($.bump())
+  .pipe(gulp.dest('./'));
 });
-
-gulp.task('foo', ()=> {
-  return gulp.src('./scss/test.scss')
-  .pipe( $.print())
-  .pipe( $.plumber() )
-  .pipe($.sass({
-    outputStyle: 'expanded',
-    precision: 10,
-    includePaths: ['.']
-  }).on('error', $.sass.logError) )
-  .pipe(gulp.dest('./assets/css'));
-});
-
 
 gulp.task('build', ['styles'], ()=> {
   return gulp.src(['assets/js/vendor/*.js', 'assets/js/*.js', '!assets/js/main.min.js'])
