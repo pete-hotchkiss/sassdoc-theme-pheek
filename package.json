@@ -3,7 +3,7 @@
   "description": "Sasscoc theme with heavy weighting to codeformatting that matches the atom text editor",
   "title": "Sassdoc Pheek Theme",
   "author": "Pete Hotchkiss",
-  "version": "0.4.39",
+  "version": "0.4.40",
   "logo": "logo-name.png",
   "keywords": [
     "sassdoc-theme"
