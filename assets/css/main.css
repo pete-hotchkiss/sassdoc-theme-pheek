@@ -223,43 +223,27 @@ pre[class*='language-'] {
 
 .item__code__tab {
   position: relative;
-  right: 0px;
+  right: 1px;
   text-align: right;
   z-index: 10;
 }
 
 .item__code__tab__label {
   outline: 1px solid;
-  
-  
   height: 1.9rem;
-  
   background-color: #2e333e;
   border-left: 3px solid #6699ff;
   display: inline-block;
-  
-  
 }
 
 .item__code__filename {
   display: inline-block;
   top: 0;
   padding: 5px 1rem 5px 3.5rem;
-  
-  
-  
-  
-  
   font-family: 'Inconsolata',Consolas, Monaco, 'Andale Mono', monospace;
   background-color: #2e333e;
-  color: #fff;
-  
-  
-  
-  
-  
+  color: #929292;
   position: relative;
-  
 }
 
 .item__code__filename::before {
