@@ -1,6 +1,13 @@
 # SassDoc Pheek Theme
 
-WIP so expect stuff to change, but approaching something I'd say is useable in the wild.
+** WIP so expect stuff to change, but approaching something I'd say is useable in the wild. **
+
+Stylish but agnostic SASSDoc theme built on top of the default theme. Key additional features
+
+* Code examples use custom styling of prism to replicate the code development environment of the Atom.io editor.
+* Layout adjusted to search box appears at top of sidebar
+* Variables labelled as type colour are previewed both in the body of the documentation and with small disc in lefthand menu 
+
 
 To se the logo which appears top left corner - change the value of the ```code``` property in your ```package.json``` file.
 
