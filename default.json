@@ -1,12 +1,12 @@
 {
   "display": {
     "annotations": {
-      "function": ["description", "parameter", "return", "example", "throw", "require", "usedby", "since", "see", "todo", "link", "author"],
-      "mixin": ["description", "parameter", "content", "output", "example", "throw", "require", "usedby", "since", "see", "todo", "link", "author"],
-      "placeholder": ["description", "example", "throw", "require", "usedby", "since", "see", "todo", "link", "author"],
-      "variable": ["description", "type", "property", "require", "example", "usedby", "since", "see", "todo", "link", "author"],
-      "css": ["description", "type", "property", "require", "example", "usedby", "since", "see", "todo", "link", "author"],
-      "Map": ["description", "type", "property", "require", "example", "usedby", "since", "see", "todo", "link", "author"]
+      "function": ["description", "parameter", "return", "example", "throw", "require", "usedby", "since", "see", "link", "author", "todo"],
+      "mixin": ["description", "parameter", "content", "output", "example", "throw", "require", "usedby", "since", "see", "link", "author", "todo"],
+      "placeholder": ["description", "example", "throw", "require", "usedby", "since", "see", "link", "author", "todo"],
+      "variable": ["description", "type", "property", "require", "example", "usedby", "since", "see", "link", "author", "todo"],
+      "css": ["description", "type", "property", "require", "example", "usedby", "since", "see", "link", "author", "todo"],
+      "Map": ["description", "type", "property", "require", "example", "usedby", "since", "see", "link", "author", "todo"]
     },
     "access": ["public", "private"],
     "alias": false,

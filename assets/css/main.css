@@ -1045,6 +1045,28 @@ table p {
   margin: 0;
 }
 
+.item__todos {
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  background-color: rgba(240, 173, 78, 0.3);
+  color: #f0ad4e;
+  padding: 17px;
+  border: 2px solid #f0ad4e;
+  margin: 0;
+  margin-bottom: 8px;
+  border-left-width: 20px;
+}
+
+.item__todos strong {
+  color: #ec971f;
+  text-transform: uppercase;
+}
+
+.item__todos p {
+  margin: 0;
+}
+
 
 .item__type {
   color: #ddd;

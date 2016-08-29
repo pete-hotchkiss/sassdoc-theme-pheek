@@ -138,6 +138,35 @@
   }
 }
 
+.item__todos {
+	width: 100%;
+  @include inline-block;
+  overflow: hidden;
+  // margin-top: 5.5em;
+  // margin-left: 1em;
+	background-color: rgba(240,173,78,.3);
+  color: #f0ad4e;
+  padding: 17px;
+  border: 2px solid #f0ad4e;
+  margin: 0;
+  margin-bottom: 8px;
+  border-left-width: 20px;
+
+  strong {
+    // float: left;
+    color: darken(#f0ad4e, 10%);
+    text-transform: uppercase;
+  }
+
+  p {
+    // float: left;
+    margin: 0;
+    // padding-left: 0.5em;
+  }
+}
+
+
+
 /**
  * Type
  */
