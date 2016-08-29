@@ -1,6 +1,10 @@
 {# Placeholders #}
 {% if item.context.type == "placeholder" %}
-<div class="item__code__tab"><span class="item__code__filename">{{ item.file.name }}</span></div>
+  <div class="item__code__tab">
+    <div class="item__code__tab__label">
+    <span class="item__code__filename">{{ item.file.name }}</span>
+    </div>
+  </div>
 <div class="item__code-wrapper {{ item.context.type  }} general">
   <pre class="item__code  item__code--togglable  language-scss"
     data-current-state="collapsed"
@@ -13,7 +17,11 @@
 </div>
 
 {% elseif item.context.type == "css" %}
-<div class="item__code__tab"><span class="item__code__filename">{{ item.file.name }}</span></div>
+<div class="item__code__tab">
+  <div class="item__code__tab__label">
+  <span class="item__code__filename">{{ item.file.name }}</span>
+  </div>
+</div>
 <div class="item__code-wrapper {{ item.context.type  }} general">
   <pre class="item__code  item__code--togglable  language-scss"
     data-current-state="collapsed"
@@ -68,7 +76,11 @@
     {% set parameters_string = parameters_string + ', ' + value %}
   {% endif %}
 {% endfor %}
-<div class="item__code__tab"><span class="item__code__filename">{{ item.file.name }}</span></div>
+<div class="item__code__tab">
+  <div class="item__code__tab__label">
+  <span class="item__code__filename">{{ item.file.name }}</span>
+  </div>
+</div>
 <div class="item__code-wrapper {{ item.context.type  }}">
   <pre class="item__code  item__code--togglable  language-scss line-numbers"
     data-current-state="collapsed"
