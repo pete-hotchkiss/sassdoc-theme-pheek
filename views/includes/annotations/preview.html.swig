@@ -26,7 +26,7 @@
     <a href="{{ basePath }}/{{ item.file.path }}#L{{ item.context.line.start }}-L{{ item.context.line.end }}" class="item__source-link" target="_blank">View source</a>
   {% endif %}
 </div>
-From File: {{ item.file.path }}
+{# From File: {{ item.file.path }} #}
 
 {# Variables #}
 {% elseif item.context.type == "variable" || item.context.type == "Map" %}

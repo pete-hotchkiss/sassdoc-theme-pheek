@@ -8,8 +8,8 @@
 
 {% if not item.alias %}
 
-
   {% for annotation in display.annotations[item.context.type] %}
+
         {% set path = '../annotations/' + annotation + '.html.swig' %}
         {% include path %}
   {% endfor %}
