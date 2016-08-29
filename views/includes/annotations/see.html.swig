@@ -6,6 +6,7 @@
       {% set title_displayed = true %}
       <h3 class="item__sub-heading">See</h3>
       <div class="item__required">
+      group: {{ see.item.group }}
       <ul class="list-unstyled">
     {% endif %}
 

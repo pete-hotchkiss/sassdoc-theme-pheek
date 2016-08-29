@@ -1,11 +1,10 @@
 {% set title_displayed = false %}
 {% for require in item.require %}
-<div class="item__row-item">
+
   {% if (display.access.indexOf(require.item.access) != -1) and not (not display.alias and require.item.alias) or require.external %}
     {% if not title_displayed %}
       {% set title_displayed = true %}
       <h3 class="item__sub-heading">Requires</h3>
-      <div class="item__required">
       <ul class="list-unstyled">
     {% endif %}
 
@@ -33,8 +32,5 @@
 {% endfor %}
 
 {% if title_displayed %}
-
 </ul>
-</div>
-</div>
 {% endif %}

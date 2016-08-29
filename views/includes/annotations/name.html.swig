@@ -7,9 +7,15 @@
 
   {% if display.alias and item.aliased.length > 0 %}
     <span class="item__aliased">aliased as
-    {% for alias in item.aliased %}
-      <a href="#{{ item.context.type }}-{{ alias }}"><code>{{ alias }}</code></a>
-    {% endfor %}
+    {% if item.aliasedgroup %}
+      {% for alias in item.aliasedgroup %}
+        <a href="#{{ alias.group }}-{{ item.context.type }}-{{ alias.name }}"><code>{{ alias.name }}</code></a>
+      {% endfor %}
+    {% else %}
+      {% for alias in item.aliased %}
+        <a href="#{{ alias.group }}-{{ item.context.type }}-{{ alias.name }}"><code>{{ alias.name }}</code></a>
+      {% endfor %}
+    {% endif %}
     </span>
   {% endif %}
 
