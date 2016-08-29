@@ -1,6 +1,6 @@
 {# Placeholders #}
 {% if item.context.type == "placeholder" %}
-
+<div class="item__code__tab"><span class="item__code__filename">{{ item.file.name }}</span></div>
 <div class="item__code-wrapper {{ item.context.type  }} general">
   <pre class="item__code  item__code--togglable  language-scss"
     data-current-state="collapsed"
@@ -10,10 +10,11 @@
   {% if basePath %}
     <a href="{{ basePath }}/{{ item.file.path }}#L{{ item.context.line.start }}-L{{ item.context.line.end }}" class="item__source-link" target="_blank">View source</a>
   {% endif %}
+  {{ item.file.name }}
 </div>
 
 {% elseif item.context.type == "css" %}
-
+<div class="item__code__tab"><span class="item__code__filename">{{ item.file.name }}</span></div>
 <div class="item__code-wrapper {{ item.context.type  }} general">
   <pre class="item__code  item__code--togglable  language-scss"
     data-current-state="collapsed"
@@ -30,7 +31,11 @@
 
 {# Variables #}
 {% elseif item.context.type == "variable" || item.context.type == "Map" %}
-
+<div class="item__code__tab">
+  <div class="item__code__tab__label">
+  <span class="item__code__filename">{{ item.file.name }}</span>
+  </div>
+</div>
 <div class="item__code-wrapper {{ item.context.type  }}">
   <pre class="item__code  language-scss"><code>${{ item.context.name }}: {{ item.context.value }}{% if item.context.scope !== "private" %} !{{ item.context.scope }}{% endif %};</code></pre>
 
@@ -64,7 +69,7 @@
     {% set parameters_string = parameters_string + ', ' + value %}
   {% endif %}
 {% endfor %}
-
+<div class="item__code__tab"><span class="item__code__filename">{{ item.file.name }}</span></div>
 <div class="item__code-wrapper {{ item.context.type  }}">
   <pre class="item__code  item__code--togglable  language-scss line-numbers"
     data-current-state="collapsed"
