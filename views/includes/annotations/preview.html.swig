@@ -10,7 +10,6 @@
   {% if basePath %}
     <a href="{{ basePath }}/{{ item.file.path }}#L{{ item.context.line.start }}-L{{ item.context.line.end }}" class="item__source-link" target="_blank">View source</a>
   {% endif %}
-  {{ item.file.name }}
 </div>
 
 {% elseif item.context.type == "css" %}
