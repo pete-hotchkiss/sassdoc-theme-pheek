@@ -229,11 +229,21 @@ pre[class*='language-'] {
 }
 
 .item__code__tab__label {
-  outline: 1px solid;
+  position: relative;
   height: 1.9rem;
   background-color: #2e333e;
   border-left: 3px solid #6699ff;
   display: inline-block;
+}
+
+.item__code__tab__label::before {
+  content: '';
+  outline: 1px solid #000;
+  width: calc(100% + 3px);
+  position: absolute;
+  right: 0;
+  height: 100%;
+  z-index: 0;
 }
 
 .item__code__filename {
