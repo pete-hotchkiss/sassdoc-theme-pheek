@@ -1,12 +1,14 @@
 {% set title_displayed = false %}
 {% for require in item.require %}
-
-  {% if (display.access.indexOf(require.item.access) != -1) and not (not display.alias and require.item.alias) or require.external %}
-    {% if not title_displayed %}
-      {% set title_displayed = true %}
+  {% if not title_displayed %}
+    {% set title_displayed = true %}
+    <div class="item__row-item">
       <h3 class="item__sub-heading">Requires</h3>
-      <ul class="list-unstyled">
-    {% endif %}
+      <div class="item__description">
+        <ul class="list-unstyled list-unstyled--narrow">
+  {% endif %}
+  {% if (display.access.indexOf(require.item.access) != -1) and not (not display.alias and require.item.alias) or require.external %}
+
 
     {% if require.external %}
       <li class="item__description  item__description--inline"><span class="item__cross-type">[external]</span>
@@ -33,4 +35,5 @@
 
 {% if title_displayed %}
 </ul>
+</div></div>
 {% endif %}

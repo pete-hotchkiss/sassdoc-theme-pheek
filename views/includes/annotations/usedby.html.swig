@@ -6,7 +6,7 @@
     <div class="item__row-item">
       <h3 class="item__sub-heading">Used by</h3>
       <div class="item__description">
-        <ul class="list-unstyled">
+        <ul class="list-unstyled list-unstyled--narrow">
   {% endif %}
 
   {% if (display.access.indexOf(usedBy.access) != -1) and not (not display.alias and usedBy.alias) %}
