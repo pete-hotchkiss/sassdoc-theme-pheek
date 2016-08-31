@@ -1,9 +1,10 @@
+<a class="item__name" href="#{{ item.context.type }}-{{ item.context.name }}"></a>
 <h3 class="item__heading">
   {% if item.access != "public" %}
     <span class="item__access">[{{ item.access }}]</span>
   {% endif %}
 
-  <a class="item__name" href="#{{ item.context.type }}-{{ item.context.name }}">{% if item.context.type == 'variable' %}${% endif %}{{ item.context.name }}</a>
+<div class="item__name">{% if item.context.type == 'variable' %}${% endif %}{{ item.context.name }}</div>
 
   {% if display.alias and item.aliased.length > 0 %}
     <span class="item__aliased">aliased as
