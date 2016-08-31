@@ -286,6 +286,10 @@ pre[class*='language-'] {
   padding: 0 !important;
 }
 
+a.item__name {
+  display: inline-block;
+}
+
 ::-webkit-scrollbar {
   height: 0.125rem;
   width: 0.125rem;
