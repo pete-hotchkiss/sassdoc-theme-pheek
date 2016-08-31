@@ -36,6 +36,15 @@ gulp.task('bump', function(){
   .pipe(gulp.dest('./'));
 });
 
+
+// Defined method of updating:
+// Semantic
+gulp.task('bump-minor', function(){
+  gulp.src('./package.json')
+  .pipe($.bump({type:'minor'}))
+  .pipe(gulp.dest('./'));
+});
+
 gulp.task('build', ['styles'], ()=> {
   return gulp.src(['assets/js/vendor/*.js', 'assets/js/*.js', '!assets/js/main.min.js'])
     .pipe( $.print() )
