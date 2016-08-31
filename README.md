@@ -11,6 +11,8 @@ Still a couple of things I want to tidy up before this hits 1 dot release
 - Fix the inconsistent left alignment of annotation details
 - Use FontAwesome icons for _function_, _variable_ and _mixin_ labels on the @see and @usedby annotation blocks
 
+Let me know if you find any other display quirks and I'll patch 'em. If you end up using the theme - thanks - and ping me a link. I'm [@petehotchkiss](http://twitter.com/petehotchkiss) on Twitter
+
 ![alt text](https://github.com/pete-hotchkiss/sassdoc-theme-pheek/raw/master/example.png "Code Example")
 
 ## Up and running...
