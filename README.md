@@ -1,4 +1,4 @@
-![alt text]( https://github.com/pete-hotchkiss/sassdoc-theme-pheek/header.png "heading")
+![alt text]( https://github.com/pete-hotchkiss/sassdoc-theme-pheek/raw/master/header.png "heading")
 # Sassdoc Pheek Theme
 A stylish but agnostic SASSDoc theme with heavy focus on rendering code examples.
 
@@ -11,7 +11,7 @@ Still a couple of things I want to tidy up before this hits 1 dot release
 - Fix the inconsistent left alignment of annotation details
 - Use FontAwesome icons for _function_, _variable_ and _mixin_ labels on the @see and @usedby annotation blocks
 
-![alt text](https://github.com/pete-hotchkiss/sassdoc-theme-pheek/example.png "Code Example")
+![alt text](https://github.com/pete-hotchkiss/sassdoc-theme-pheek/raw/master/example.png "Code Example")
 
 ## Up and running...
 Assuming you even know what Sassdoc is, and already have the bad-boy installed. Install the theme via ```npm```
