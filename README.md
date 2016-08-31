@@ -1,22 +1,69 @@
-# SassDoc Pheek Theme
+![alt text]( https://github.com/pete-hotchkiss/sassdoc-theme-pheek/header.png "heading")
+# Sassdoc Pheek Theme
+A stylish but agnostic SASSDoc theme with heavy focus on rendering code examples.
 
-** WIP so expect stuff to change, but approaching something I'd say is useable in the wild. **
+- Code examples styled to match atom.io One Dark Theme
+- SASS filenames for easy reference
+- Previews for colours both in the main body of the documentation and in the sidebar navigation
 
-Stylish but agnostic SASSDoc theme built on top of the default theme. Key additional features
+**TODO**
+Still a couple of things I want to tidy up before this hits 1 dot release
+- Fix the inconsistent left alignment of annotation details
+- Use FontAwesome icons for _function_, _variable_ and _mixin_ labels on the @see and @usedby annotation blocks
 
-* Code examples use custom styling of prism to replicate the code development environment of the Atom.io editor.
-* Layout adjusted to search box appears at top of sidebar
-* Variables labelled as type colour are previewed both in the body of the documentation and with small disc in lefthand menu
+![alt text](https://github.com/pete-hotchkiss/sassdoc-theme-pheek/example.png "Code Example")
+
+## Up and running...
+Assuming you even know what Sassdoc is, and already have the bad-boy installed. Install the theme via ```npm```
+
+```
+npm i --save sassdoc-theme-pheek
+```
+
+Depending on which way your skinning your configuration cat, change the theme value to ```pheek```
+
+### Using gulp
+
+```
+gulp.task('sassdoc', function () {
+  var options = {
+    dest: 'docs',
+    verbose: true,
+    theme: 'pheek',
+    display: {
+      alias: true
+    }
+  };
+
+  return gulp.src('path/to/you/sass/files/**/*.scss')
+    .pipe($.sassdoc(options));
+});
+
+```
+
+### Using sassdoc.config file
+```
+{
+  "dest": "destination/path",
+  "verbose": true,
+  "theme": "pheek",
+  "display": {
+    "alias": "true"
+  },
+  "groups": {
+    "groupname": "display name",
+  }
+}
+
+```
+
+## Changing display items
+
+### Logo
+The theme will look automatically for a file called your_logo.svg in the __assets/images__ folder of where your docs are built to. To change this, edit the ```package.json``` file, amending the
+ ```logo``` property to your prefered file name.
 
 
-To se the logo which appears top left corner - change the value of the ```code``` property in your ```package.json``` file.
-
-Still to do:
-
-- Render something better with the group headings. Current implementation is way overbearing.
-- Clean up the ```<code>``` instances as there's still the odd color/formatting weirdness occurring.
-- @todo annotations deserve something nicer.
-
-
-> **Notes**:
-  Current _SassDoc_ instance appears to have bug [464](https://github.com/SassDoc/sassdoc/issues/464) which means anything documented with a _@group_ annotation isn't correctly referenced with an #anchor point. Subsequently, should the items be referenced with a _@see_ annotation the incorrect link is injected into the page.<br><br>There is a pending pull request [PR](https://github.com/SassDoc/sassdoc/pull/465) which fixes this and exposes a ```see.group``` value to the ```see.html.swig``` template file.
+## Other stuff you should read
+> **Note**:
+  Current _SassDoc_ instance appears to have bug [464](https://github.com/SassDoc/sassdoc/issues/464) which means anything documented with a _@group_ annotation isn't correctly referenced with an #anchor point. Subsequently, should the items be referenced with a _@see_ annotation the incorrect link is injected into the page.<br><br>There is a pending pull request [PR](https://github.com/SassDoc/sassdoc/pull/465) which fixes this and exposes a ```see.group``` value to the ```see.html.swig``` template file. Once this PR is authorsied this theme will automatically pick up the feature and the linking will work correctly on your next documentation generation.
