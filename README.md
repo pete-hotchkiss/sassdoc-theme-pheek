@@ -26,7 +26,7 @@ Depending on which way your skinning your configuration cat, change the theme va
 
 ### Using gulp
 
-```
+```javascript
 gulp.task('sassdoc', function () {
   var options = {
     dest: 'docs',
@@ -44,7 +44,7 @@ gulp.task('sassdoc', function () {
 ```
 
 ### Using sassdoc.config file
-```
+```json
 {
   "dest": "destination/path",
   "verbose": true,
