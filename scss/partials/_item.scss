@@ -12,6 +12,8 @@
   font-size: 2em;
   font-weight: 300;
   // float: left;
+	display: flex;
+	align-items: baseline;
 }
 
 /**
@@ -177,12 +179,13 @@
 }
 
 /**
- * Aliases
+ * Aliases 
  */
 .item__alias,
 .item__aliased {
   color: $medium-grey;
-  font-size: 0.8em;
+  font-size: 0.6em;
+	margin-left: 0.6em;
 }
 
 

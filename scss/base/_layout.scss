@@ -28,7 +28,7 @@
 	}
   }
 }
-
+ 
 .item__row-item {
   display: flex;
   flex-direction: row;
@@ -36,7 +36,7 @@
   & h3 {
     // border: 1px solid blue;
     width: 20%;
-    min-width: 170px;
+    max-width: 170px;
   }
 
   & div[class*="item__"] {

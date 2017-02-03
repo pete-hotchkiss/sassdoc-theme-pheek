@@ -4,13 +4,17 @@
     <span class="item__access">[{{ item.access }}]</span>
   {% endif %}
 
-<div class="item__name">{% if item.context.type == 'variable' %}${% endif %}{{ item.context.name }}</div>
+<div class="item__name">
+  <code>
+  {% if item.context.type == 'variable' %}${% endif %}{{ item.context.name }}
+  </code>
+</div>
 
   {% if display.alias and item.aliased.length > 0 %}
     <span class="item__aliased">aliased as
     {% if item.aliasedgroup %}
       {% for alias in item.aliasedgroup %}
-        <a href="#{{ alias.group }}-{{ item.context.type }}-{{ alias.name }}"><code>{{ alias.name }}</code></a>
+        <a href="#{{ alias.group }}-{{ item.context.type }}-{{ alias.name }}"><code>${{ alias.name }}</code></a>
       {% endfor %}
     {% else %}
       {% for alias in item.aliased %}
@@ -21,7 +25,7 @@
   {% endif %}
 
   {% if item.alias %}
-    <span class="item__alias">alias for <a href="#{{ item.context.type }}-{{ item.alias }}"><code>{{ item.alias }}</code></a> </span>
+    <span class="item__alias">alias for <a href="#{{ item.context.type }}-{{ item.alias }}"><code>${{ item.alias }}</code></a> </span>
   {% endif %}
 </h3>
 
