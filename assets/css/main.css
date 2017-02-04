@@ -1100,7 +1100,7 @@ table p {
 
 .item__alias,
 .item__aliased {
-  color: #ddd;
+  color: #919191;
   font-size: 0.6em;
   margin-left: 0.6em;
 }
@@ -1156,7 +1156,7 @@ table p {
 
 .item__since {
   padding-top: 0.9em;
-  color: #c4c4c4;
+  color: #919191;
   margin-bottom: 1em;
 }
 

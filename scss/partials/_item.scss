@@ -179,11 +179,11 @@
 }
 
 /**
- * Aliases 
+ * Aliases
  */
 .item__alias,
 .item__aliased {
-  color: $medium-grey;
+  color: darken($medium-grey, 30%);
   font-size: 0.6em;
 	margin-left: 0.6em;
 }
@@ -248,7 +248,7 @@
 .item__since {
   // float: right;
   padding-top: 0.9em;
-  color: darken($medium-grey, 10%);
+  color: darken($medium-grey, 30%);
   margin-bottom: 1em;
 }
 
