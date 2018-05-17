@@ -3,7 +3,7 @@
   "description": "Sasscoc theme with heavy weighting to codeformatting that matches the atom text editor",
   "title": "Sassdoc Pheek Theme",
   "author": "Pete Hotchkiss",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "logo": "logo-name.png",
   "keywords": [
     "sassdoc-theme"
@@ -36,7 +36,7 @@
     "gulp-load-plugins": "^1.2.4",
     "gulp-plumber": "^1.1.0",
     "gulp-print": "^2.0.1",
-    "gulp-sass": "^2.3.2",
+    "gulp-sass": "3.1.0",
     "gulp-sourcemaps": "^1.6.0",
     "html-minifier": "^0.7.0",
     "sassdoc-extras": "^2.4.0",
@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "babel": "^4.4.0",
-    "gulp-concat": "^2.6.0",
+    "gulp-concat": "^2.6.1",
     "gulp-strip-css-comments": "^1.2.0",
     "jshint": "^2.6.0",
     "uglify-js": "^2.4.15"
